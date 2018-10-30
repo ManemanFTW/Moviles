@@ -1,0 +1,20 @@
+<ion-view title="Page" id="page1">
+  <ion-content padding="true" class="has-header">
+    <form id="page-form1" class="list">
+      <h1 id="page-heading1" style="color:#000000;">Write the symbol</h1>
+    </form>
+    <form id="page-form1" class="list">
+      <label class="item item-select" id="page-select1" >
+        <span class="input-label" >Select</span>
+        <select ng-model="mdl.comp">
+          <option value="MSFT">AAPL</option>
+          <option value="GE">GE</option>
+          <option value="SBUX">SBUX</option>
+          <option value="WBA">WBA</option>
+        </select>
+      </label>
+	  
+    </form>
+    <a ui-sref="page2({comp: mdl.comp})" id="page-button1" class="button button-positive button-block">Submit</a>
+  </ion-content>
+</ion-view>
